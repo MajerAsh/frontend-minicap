@@ -29,10 +29,10 @@ export default function FacultyDetails() {
   if (error) return <p>{error}</p>;
   if (!professor) return <p>Loading professor...</p>;
 
-  return (
+   return (
     <div>
       <img
-        src={professor.profileImage}
+        src={professor.profileimage}
         alt={`Profile of ${professor.name}`}
         width="200"
       />
