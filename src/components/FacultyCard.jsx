@@ -5,7 +5,7 @@ export default function FacultyCard({ professor }) {
   return (
     <div className="card">
       <img
-        src={professor.profileImage}
+        src={professor.profileimage}
         alt={`Profile of ${professor.name}`}
         width="100"
       />
