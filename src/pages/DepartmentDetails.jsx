@@ -17,7 +17,7 @@ export default function DepartmentDetails() {
 
         const allFaculty = await fetchFaculty();
         const deptFaculty = allFaculty.filter(
-          (f) => f.department_id === parseInt(id)
+          (f) => f.departmentId === parseInt(id) //departmentID like in facultyform and managedepartments
         );
         setFacultyList(deptFaculty);
       } catch (err) {
@@ -35,12 +35,12 @@ export default function DepartmentDetails() {
     <div>
       <h2>{department.name}</h2>
       <img
-        src={department.images} // Change this from department.imageUrl
+        src={department.images}
         alt={`Banner for ${department.name}`}
         width="400"
       />
       <p>{department.description}</p>
-      <p>Contact: {department.contactinfo}</p>
+      <p>Contact: {department.contactInfo}</p>
 
       <h3>Faculty</h3>
       {facultyList.map((prof) => (

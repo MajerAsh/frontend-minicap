@@ -32,14 +32,13 @@ export default function FacultyDetails() {
   return (
     <div>
       <img
-        // Change profileImg to profileImage here
         src={professor.profileImage}
         alt={`Profile of ${professor.name}`}
-        width="100"
+        width="200"
       />
       <h2>{professor.name}</h2>
-      <p>{professor.bio}</p>
-      <p>Email: {professor.contactinfo}</p>
+      <p style={{ whiteSpace: "pre-wrap" }}>{professor.bio}</p>
+      <p>Email: {professor.contactInfo}</p>
       <p>
         Department:{" "}
         {department ? (
