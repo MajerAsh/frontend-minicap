@@ -35,7 +35,7 @@ export default function FacultyDetails() {
         // Change profileImg to profileImage here
         src={professor.profileImage}
         alt={`Profile of ${professor.name}`}
-        width="100"
+        width="200"
       />
       <h2>{professor.name}</h2>
       <p>{professor.bio}</p>

@@ -7,7 +7,7 @@ export default function FacultyCard({ professor }) {
       <img
         src={professor.profileImage}
         alt={`Profile of ${professor.name}`}
-        width="100"
+        width="200"
       />
       <h4>{professor.name}</h4>
       <p>{professor.bio}</p>

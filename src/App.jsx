@@ -19,7 +19,10 @@ import ProtectedRoute from "./components/ProtectedRoute";
 function App() {
   return (
     <AuthProvider>
-      <h1>Welcome to FSU</h1>
+      <div className="headerTitle">
+        <h1>Welcome to FSU</h1>
+        <h1>Fullstack University</h1>
+      </div>
       <Routes>
         <Route element={<Layout />}>
           {/* Public Routes */}
@@ -30,9 +33,14 @@ function App() {
           <Route path="/faculty/:id" element={<FacultyDetails />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-          <Route 
-            path="/admin" 
-            element={ <ProtectedRoute> <Outlet /> </ProtectedRoute> }
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute>
+                {" "}
+                <Outlet />{" "}
+              </ProtectedRoute>
+            }
           >
             <Route path="departments" element={<ManageDepartments />} />
             <Route path="faculty" element={<ManageFaculty />} />

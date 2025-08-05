@@ -6,19 +6,22 @@
 .admin-sidebar {
   width: 200px;
   padding: 1rem;
-  border-right: 1px solid #ccc;
-  flex-shrink: 0; 
+
+  height: 100vh;
+  background-color: #011020;
+  flex-shrink: 0;
 }
 
 .admin-sidebar h2 {
   margin-top: 0;
+  margin-bottom: 2rem;
   font-size: 1.2em;
 }
 
 .admin-sidebar nav {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 .admin-sidebar button {
@@ -26,6 +29,7 @@
 }
 
 .main-content-area {
+  align-content: center;
   flex-grow: 1;
   padding: 1rem;
 }

@@ -1,8 +1,29 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+.headerTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background-color: #676ccaaa;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-width: 100vw;
+}
+
+.navBar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #011020;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  transition: color 0.3s ease;
 }
 
 .logo {
