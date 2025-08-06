@@ -2,8 +2,11 @@
 .manage-list {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
 }
-
 .manage-list-item {
   margin: 20px 0;
   width: 80%;
@@ -22,6 +25,9 @@
 
 /* General styles for the Add/Edit forms */
 .manage-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   border: 1px solid #ccc;
   padding: 1rem;
   margin: 1rem 0;
@@ -36,12 +42,12 @@
 /* Specific to the faculty management section in DepartmentForm */
 .faculty-management-container {
   display: flex;
+  align-items: center;
   margin-top: 15px;
   gap: 20px;
 }
 
 .faculty-list-box {
-  flex: 1;
   border: 1px solid #eee;
   padding: 10px;
   border-radius: 4px;
@@ -55,8 +61,14 @@
   /* border-radius: 8px;
   border: 1px solid #ccc; */
   box-sizing: border-box;
+  margin-bottom: 0.75rem;
 }
-
+.manage-form input {
+  width: 70%;
+  resize: vertical;
+  padding: 0.6em 1.2em;
+  margin-bottom: 0.75rem;
+}
 .manage-form > div {
   display: flex;
   align-items: center;

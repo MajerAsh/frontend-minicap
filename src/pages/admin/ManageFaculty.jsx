@@ -98,7 +98,7 @@ export default function ManageFaculty() {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className="ManageHead">
+    <div>
       <h2>Manage Faculty</h2>
 
       {!editingFaculty && (
